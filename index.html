@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- these three links are for Inter font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Code to Text</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- this to parse markdown text into html format  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    </head>
+    <body>
+        <button id="clearBtn">Clear</button>
+        <button class="github">
+            <a href="https://github.com/iamashishshah/mymarkdown"
+                ><img
+                    src="./assets/github-logo.png"
+                    alt="github link"
+                    height="32px"
+                    width="32px"
+            /></a>
+        </button>
+        <div class="container">
+            <textarea
+                id="markdown"
+                placeholder="Enter Markdown syntax..."
+            ></textarea>
+            <div id="preview" class="preview">
+                Your output will show here...
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
